@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top {
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+    top: 0;
+    align-items: center;
+    font-weight: 500;
+    font-size: medium;
+    letter-spacing: 4px;
+    height: 52px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.item-container {
+    display: flex;
+    gap: 20px;
+}
+
+.item-box {
+    position: relative;
+}
+
+.item-box img{
+    width: 100%;
+}
+
+.team-container {
+    display: flex;
+    gap: 20px;
+}
+
+.team-box img {
+    width: 100%;
+}
+
+.team-box button {
+    border: none;
+    padding: 10px;
+    font-weight: 525;
+    font-size: medium;
+    width: 100%;
+    cursor: pointer;
+}
+
+.body-div input {
+    font-size: medium;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+}
