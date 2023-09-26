@@ -1,0 +1,402 @@
+@font-face {
+    font-family: myFirstFont1;
+    src: url(Resources/falling-sky-font/FallingSkyMedium-ved9.otf);
+}
+@font-face {
+    font-family: myFirstFont2;
+    src: url(Resources/swansea-font/Swansea-q3pd.ttf);
+}
+@font-face {
+    font-family: myFirstFont3;
+    src: url(Resources/rosabelia-sans-font/RosabeliaSans-ZVxBx.otf); 
+}
+@font-face {
+    font-family: myFirstFont4;
+    src: url(Resources/ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+@font-face {
+    font-family: myFirstFont5;
+    src: url(Resources/hind-font/HindRegular-9YyOL.ttf);
+}
+
+#scroll-circle {
+    transform: translateX(100px);
+    transition: all 0.2s;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 2vw;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.01em !important;
+    font-family: myFirstFont1;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: rgb(168,254,59);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.7s;
+}
+
+.center > a:hover, .menu > span > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.font_dark {
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.font_light {
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.font_mid {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    z-index: -100;
+    filter: drop-shadow(10px);
+    box-shadow: 10px 10px 100px var(--main-color);
+    filter: blur(125px);
+}
+
+body {
+    background-color: black;
+    padding: 3.5% 10%;
+}
+
+#logo {
+    width: 25px;
+    height: 25px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.logo_div {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 20px;
+    width: fit-content;
+    gap: 5px;
+}
+
+.menu {
+    gap: 2.5vw;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.button {
+    padding: 0.8% 5%;
+    position: relative;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    background-color: var(--main-color);
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 1s;
+}
+
+.button span {
+    position: relative;
+    z-index: 1;
+    transition: color 1.5s;
+}
+
+.button::before, .button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    background-color: black;
+    transition: top 0.5s, bottom 0.5s;
+}
+
+.button::before {
+    top: -100%;
+    left: 0;
+}
+
+.button::after {
+    bottom: -100%;
+    left: 0;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: 0px 0px 25px var(--main-color);
+}
+
+.button:hover span{
+    color: white;
+}
+
+.button:hover::after {
+    bottom: 0;
+}
+
+.button:hover::before {
+    top: 0;
+}
+
+header {
+    justify-content: space-between;
+}
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.logos-slide {
+    user-select: none;
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 20s infinite linear;
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide img {
+    height: 100px;
+    width: 150px;
+    margin: 0 40px;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(3);
+}
+
+.logos-slide img:nth-child(2) {
+    object-fit: cover;
+}
+
+.logos-slide img:nth-child(8), .logos-slide img:nth-child(7) img{
+    filter: brightness(10);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.outer-container {
+    margin-top: 2%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 58%;
+    height: fit-content;
+    border-left: 1px solid var(--main-color);
+    border-radius: 15px;
+    padding: 2%;
+    padding-left: 10vw;
+    transition: transform 0.3s;
+}
+
+.outer-container h1, h2 {
+    color: white;   
+}
+
+.outer-container::before {
+    font-family: 'Font Awesome 5 Free';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    left: 0;
+    top: 0; 
+    font-size: 2.5vw;
+    transform: translateY(45%) translateX(40%);
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-left: 3px solid var(--main-color);
+}
+
+.outer-container:nth-child(1)::before {
+    content: '\f2d2';
+}
+
+.outer-container:nth-child(2)::before {
+    content: '\f086';
+}
+
+.outer-container:nth-child(3)::before {
+    content: '\f2b5';
+}
+
+.outer-container:nth-child(4)::before {
+    content: '\f279';
+}
+
+.outer-container:hover {
+    transform: translateX(10px);
+}
+
+
+.box-container {
+    position: relative;
+    padding: 4%;
+    color: white;
+    width: 30%;
+    background-color: black;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.4s;
+}
+
+.box-container::after {
+    content: "";
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    border-radius: 10px;
+    background: repeating-conic-gradient(from -30deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    z-index: -1;
+    
+}
+
+.box-container:hover::after {
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    0% {
+        background: repeating-conic-gradient(from 0deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    10% {
+        background: repeating-conic-gradient(from 36deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    20% {
+        background: repeating-conic-gradient(from 72deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    30% {
+        background: repeating-conic-gradient(from 108deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    40% {
+        background: repeating-conic-gradient(from 141deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    50% {
+        background: repeating-conic-gradient(from 177deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    60% {
+        background: repeating-conic-gradient(from 213deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    70% {
+        background: repeating-conic-gradient(from 249deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    80% {
+        background: repeating-conic-gradient(from 285deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    90% {
+        background: repeating-conic-gradient(from 321deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+    100% {
+        background: repeating-conic-gradient(from 360deg, var(--main-color) 0%, var(--main-color) 5%, transparent 5%, transparent 40%, var(--main-color) 50%);
+    }
+}
+
+.circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-left: 3px solid var(--main-color);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+footer {
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5%;
+    width: 100%;
+    background-color: black;
+}
+
+footer > div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer div div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer > div > div > div {
+    opacity: 0.5;
+}
+
+.vid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
