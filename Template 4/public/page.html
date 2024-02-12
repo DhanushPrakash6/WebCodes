@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login - Book My ClassRoom</title>
+    <meta property="og:title" content="Profile - Soft UI Pro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/x-icon" href="components/read-light-idea.svg">
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button; appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+        color: #d2d6da;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="page.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <div>
+      <link href="page.css" rel="stylesheet" />
+      <link href="index.css" rel="stylesheet" />
+      <div class="profile-container">
+        <div data-role="Header" class="header-header">
+          <nav class="header-nav">
+            <div class="header-container">
+              <a href="./index.html" class="header-navlink Large" style="font-family: myFirstFont1; font-weight: 100; font-size: x-large;">
+                Book My ClassRoom
+              </a>
+              <div class="header-menu" style="margin-left: -10%;">
+                <a href="./index.html" class="header-navlink1 Large">Home</a>
+                <!-- <a href="" class="header-navlink2 Large">Features</a> -->
+                <a href="./index.html#Section_1" class="header-navlink2 Large">All Courses</a>
+                <a href="#Section_2" class="header-navlink2 Large">Contact</a>
+                <!-- <a href="coming-soon.html" class="header-navlink3 Large">
+                  Coming Soon
+                </a> -->
+              </div>
+              <div class="header-container1">
+                <div class="header-container2">
+                  <div class="primary-pink-button-container">
+                    <button
+                      class="primary-pink-button-button button ButtonSmall" id="sign_button" style="width: 100px;"
+                    >
+                    
+                      <span>Sign Up</span>
+                    </button>
+                  </div>
+                </div>
+                <div data-role="BurgerMenu" class="header-burger-menu">
+                  <svg viewBox="0 0 1024 1024" class="header-icon">
+                    <path
+                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div data-role="MobileMenu" class="header-mobile-menu">
+            <div class="header-top">
+              <a href="./index.html" class="header-navlink4 Large">
+                Book My ClassRoom
+              </a>
+              <div data-role="CloseMobileMenu" class="header-close-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon2">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="header-mid">
+              <div class="header-menu1">
+                <a href="./index.html" class="header-navlink5 Large">Home</a>
+                <!-- <a href="#Section_3" class="header-navlink6 Large">Features</a> -->
+                <a href="./index.html#Section_1" class="header-navlink6 Large">All Courses</a>
+                <a href="#Section_2" class="header-navlink6 Large">Contact</a>
+                <!-- <a href="coming-soon.html" class="header-navlink7 Large">
+                  Coming Soon
+                </a> -->
+              </div>
+            </div>
+            <div class="header-bot">
+              <div class="primary-pink-button-container">
+                <a href="page.html">
+                  <button class="primary-pink-button-button button ButtonSmall" id="sign_button">
+                    <span>Sign Up</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="user-container" id="Section_User">
+          <div class="inner-user-container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="wrapper box-login">
+              <div class="card-switch">
+                  <label class="switch">
+                     <input type="checkbox" class="toggle" id="log_toggle">
+                     <span class="slider"></span>
+                     <span class="card-side"></span>
+                     <div class="flip-card__inner">
+                        <div class="flip-card__front">
+                           <form class="form" method="post" action="/">
+                            <div class="flex-column">
+                              <label>Email </label></div>
+                              <div class="inputForm">
+                                <svg height="20" viewBox="0 0 32 32" width="20" xmlns="http://www.w3.org/2000/svg"><g id="Layer_3" data-name="Layer 3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
+                                <input type="text" class="input" placeholder="Enter your Email" name="Email">
+                              </div>
+                            
+                            <div class="flex-column">
+                              <label>Password </label></div>
+                              <div class="inputForm">
+                                <svg height="20" viewBox="-64 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+                                <input type="password" class="input" placeholder="Enter your Password" name="Password">
+                                <svg style="cursor: pointer;" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"></path></svg>
+                              </div>
+                            <button class="button-submit">Let's Go</button>
+                            <p class="p">Don't have an account? <span class="span">Sign Up</span></p>
+                            <p class="p line">Or With</p>
+                        
+                            <div class="flex-row">
+                              <button class="btn google">
+                                <svg version="1.1" width="20" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+                                  c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+                                  C103.821,274.792,107.225,292.797,113.47,309.408z"></path>
+                                <path style="fill:#518EF8;" d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+                                  c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+                                  c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"></path>
+                                <path style="fill:#28B446;" d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+                                  c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+                                  c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"></path>
+                                <path style="fill:#F14336;" d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+                                  c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+                                  C318.115,0,375.068,22.126,419.404,58.936z"></path>
+                                
+                                </svg>
+                                  
+                                        Google 
+                                        
+                                      </button><button class="btn apple">
+                                <svg version="1.1" height="20" width="20" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.773 22.773" style="enable-background:new 0 0 22.773 22.773;" xml:space="preserve"> <g> <g> <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"></path> <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"></path> </g></g></svg>
+                                
+                                        Apple 
+                                        
+                            </button>
+                          </div>
+                        </form>
+                        </div>
+                        <div class="flip-card__back">
+                           <!-- <div class="title">Sign up</div>
+                           <form class="flip-card__form" action=""> -->
+                              <!-- <input class="flip-card__input" placeholder="Name" type="name"> -->
+                              <!-- <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                              <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                              <button class="flip-card__btn">Confirm!</button>
+                           </form> -->
+                           <form class="form" method="post" action="/">
+                            <div class="flex-column">
+                              <label>Email </label></div>
+                              <div class="inputForm">
+                                <svg height="20" viewBox="0 0 32 32" width="20" xmlns="http://www.w3.org/2000/svg"><g id="Layer_3" data-name="Layer 3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
+                                <input type="text" class="input" placeholder="Enter your Email" name="Email">
+                              </div>
+                            
+                            <div class="flex-column">
+                              <label>Password </label></div>
+                              <div class="inputForm">
+                                <svg height="20" viewBox="-64 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+                                <input type="password" class="input" placeholder="Enter your Password" name="Password">
+                                <svg style="cursor: pointer;" viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"></path></svg>
+                              </div>
+                            
+                            <!-- <div class="flex-row">
+                              <div>
+                              <input type="checkbox">
+                              <label>Remember me </label>
+                              </div>
+                              <span class="span">Forgot password?</span>
+                            </div> -->
+                            <button class="button-submit">Sign Up</button>
+                            <p class="p">Already have an account? <span class="span">Log In</span>
+                        
+                            </p>
+                            <p class="p line">Or With</p>
+                        
+                            <div class="flex-row">
+                              <button class="btn google">
+                                <svg version="1.1" width="20" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+                                  c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+                                  C103.821,274.792,107.225,292.797,113.47,309.408z"></path>
+                                <path style="fill:#518EF8;" d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+                                  c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+                                  c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"></path>
+                                <path style="fill:#28B446;" d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+                                  c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+                                  c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"></path>
+                                <path style="fill:#F14336;" d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+                                  c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+                                  C318.115,0,375.068,22.126,419.404,58.936z"></path>
+                                
+                                </svg>
+                                  
+                                        Google 
+                                        
+                                      </button><button class="btn apple">
+                                <svg version="1.1" height="20" width="20" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.773 22.773" style="enable-background:new 0 0 22.773 22.773;" xml:space="preserve"> <g> <g> <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"></path> <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"></path> </g></g></svg>
+                                
+                                        Apple 
+                                        
+                            </button>
+                          </div>
+                        </form>
+                        </div>
+                     </div>
+                  </label>
+              </div>   
+            </div>
+          </div>
+        </section>
+        <section class="home-contaier" id="Section_2">
+          <div class="home-container30">
+            <div class="home-container31">
+              <!-- <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"
+                ></path>
+              </svg> -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" height="30" width="30"><g id="ai-settings-spark--cog-gear-settings-machine-artificial-intelligence"><path id="Union" fill="#ffffff" fill-rule="evenodd" d="M21.010714285714286 1.5964285714285713c0.3857142857142857 -1.7678571428571428 2.9057142857142857 -1.7785714285714285 3.3085714285714287 -0.012857142857142857l0.019285714285714285 0.08142857142857142 0.03642857142857143 0.1607142857142857c0.44999999999999996 1.917857142857143 2.0035714285714286 3.3857142857142857 3.9492857142857143 3.724285714285714 1.845 0.3214285714285714 1.845 2.9699999999999998 0 3.2914285714285714 -1.9542857142857144 0.3407142857142857 -3.514285714285714 1.8214285714285714 -3.955714285714286 3.754285714285714l-0.04928571428571429 0.21214285714285713c-0.40285714285714286 1.7657142857142856 -2.920714285714286 1.755 -3.3085714285714287 -0.015l-0.03857142857142857 -0.18a4.892142857142857 4.892142857142857 0 0 0 -3.942857142857143 -3.773571428571428c-1.8428571428571427 -0.3214285714285714 -1.8428571428571427 -2.9657142857142853 0 -3.287142857142857A4.892142857142857 4.892142857142857 0 0 0 20.96785714285714 1.7999999999999998l0.03 -0.135 0.015 -0.06857142857142857ZM16.652142857142856 11.018571428571429C13.776428571428571 10.521428571428572 12.829285714285714 7.587857142857143 13.808571428571428 5.485714285714286a1.9028571428571428 1.9028571428571428 0 0 0 -1.3328571428571427 -0.5485714285714286h-1.5642857142857143a1.907142857142857 1.907142857142857 0 0 0 -1.772142857142857 1.219285714285714l-0.8185714285714285 2.1149999999999998 -2.82 1.6007142857142858 -2.25 -0.34285714285714286a1.907142857142857 1.907142857142857 0 0 0 -1.905 0.9321428571428572l-0.7607142857142857 1.335a1.907142857142857 1.907142857142857 0 0 0 0.15000000000000002 2.1535714285714285l1.4314285714285715 1.772142857142857V18.92142857142857l-1.3928571428571428 1.772142857142857a1.907142857142857 1.907142857142857 0 0 0 -0.15000000000000002 2.1514285714285712l0.7607142857142857 1.335a1.907142857142857 1.907142857142857 0 0 0 1.907142857142857 0.9321428571428572l2.2478571428571428 -0.34285714285714286 2.7814285714285716 1.6007142857142858 0.8185714285714285 2.117142857142857a1.905 1.905 0 0 0 1.772142857142857 1.219285714285714h1.6007142857142858a1.907142857142857 1.907142857142857 0 0 0 1.772142857142857 -1.2214285714285713l0.8207142857142857 -2.1149999999999998 2.7814285714285716 -1.5985714285714285 2.25 0.34285714285714286a1.9028571428571428 1.9028571428571428 0 0 0 1.905 -0.9342857142857143l0.7607142857142857 -1.335a1.907142857142857 1.907142857142857 0 0 0 -0.15000000000000002 -2.1514285714285712l-1.4314285714285715 -1.772142857142857V16.07785714285714c-1.1185714285714285 -0.42428571428571427 -2.057142857142857 -1.3628571428571428 -2.372142857142857 -2.8114285714285714l-0.04071428571428571 -0.18214285714285716a2.6785714285714284 2.6785714285714284 0 0 0 -2.1557142857142857 -2.0657142857142854ZM11.693571428571428 21.299999999999997a3.9814285714285713 3.9814285714285713 0 1 0 0 -7.960714285714285 3.9814285714285713 3.9814285714285713 0 0 0 0 7.960714285714285Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>
+            </div>
+            <h2 class="home-text30 HeadingTwo">
+              <span class="home-text31">Contact Us</span>
+            </h2>
+          </div> 
+        </section>
+        <section style="margin-top: -8%;">
+          <div class="profile-contact">
+            <div class="profile-container09">
+              <div class="profile-form">
+                <h2 class="profile-text18 HeadingOne"><span>Say Hi!</span></h2>
+                <span class="profile-text20 Lead">
+                  We'd like to talk with you.
+                </span>
+                <form class="profile-form1">
+                  <label class="profile-text21 Label">My name is</label>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="profile-textinput Small input"
+                    id="user"
+                  />
+                  <label class="profile-text22 Label">Email Address</label>
+                  <input
+                    type="text"
+                    placeholder="What you love"
+                    class="profile-textinput1 Small input"
+                    id="email"
+                  />
+                  <label class="profile-text23 Label">Your message</label>
+                  <textarea
+                    rows="8"
+                    placeholder="I want to say that..."
+                    class="profile-textarea textarea Small"
+                    id="body"
+                    style="resize: none;"
+                  ></textarea>
+                </form>
+                <div class="profile-container10">
+                  <div class="profile-container11">
+                    <div class="primary-blue-button-container">
+                      <button
+                        id="contact"
+                        class="primary-blue-button-button button ButtonSmall"
+                        style="cursor: pointer;"
+                        >
+                        <span>send message</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-info">
+                <div class="profile-container12">
+                  <h3 class="HeadingTwo">
+                    <span>Contact</span>
+                    <span>Information</span>
+                  </h3>
+                  <span class="profile-text27">
+                    Fill up the form and our Team will get back to you within 24
+                    hours.
+                  </span>
+                  <div class="profile-container13">
+                    <div class="profile-container14">
+                      <svg viewBox="0 0 1024 1024" class="profile-icon02">
+                        <path
+                          d="M742 460l-94-94q-18-18-10-44 24-72 24-152 0-18 12-30t30-12h150q18 0 30 12t12 30q0 300-213 513t-513 213q-18 0-30-12t-12-30v-150q0-18 12-30t30-12q80 0 152-24 24-10 44 10l94 94q186-96 282-282z"
+                        ></path>
+                      </svg>
+                      <a href="tel:+40 772 100 200" class="profile-link Small">
+                        (+91) 824 882 9100
+                      </a>
+                    </div>
+                    <div class="profile-container15">
+                      <svg viewBox="0 0 1024 1024" class="profile-icon04">
+                        <path
+                          d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                        ></path>
+                      </svg>
+                      <a
+                        href="mailto:hello@creative-tim.com?subject="
+                        class="profile-link1 Small"
+                      >
+                        dhanushprakash194@gmail.com
+                      </a>
+                    </div>
+                    <div class="profile-container16">
+                      <svg viewBox="0 0 1024 1024" class="profile-icon06">
+                        <path
+                          d="M512 490q44 0 75-31t31-75-31-75-75-31-75 31-31 75 31 75 75 31zM512 86q124 0 211 87t87 211q0 62-31 142t-75 150-87 131-73 97l-32 34q-12-14-32-37t-72-92-91-134-71-147-32-144q0-124 87-211t211-87z"
+                        ></path>
+                      </svg>
+                      <span class="profile-text28 Small">
+                        Avadi, Chennai 602024
+                      </span>
+                    </div>
+                  </div>
+                  <div class="profile-container17">
+                    <a href="https://www.instagram.com/infinitesoul_194/" target="_blank">
+                      <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="profile-icon14">
+                      <path
+                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                      ></path>
+                      </svg>  
+                    </a>
+                    <a href="https://twitter.com/dp200401" target="_blank">
+                      <svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="profile-icon10">
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                      </svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=dhanushprakash194@gmail.com&tf=cm" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="profile-icon14"  viewBox="0,0,256,256">
+                      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path></g></g>
+                      </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhanushprakash-j-5a1a26237/" target="_blank">
+                      <svg viewBox="0,0,256,256" class="profile-icon14">
+                      <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M7.5,5c-1.36719,0 -2.5,1.13281 -2.5,2.5v17c0,1.36719 1.13281,2.5 2.5,2.5h17c1.36719,0 2.5,-1.13281 2.5,-2.5v-17c0,-1.36719 -1.13281,-2.5 -2.5,-2.5zM7.5,7h17c0.28516,0 0.5,0.21484 0.5,0.5v17c0,0.28516 -0.21484,0.5 -0.5,0.5h-17c-0.28516,0 -0.5,-0.21484 -0.5,-0.5v-17c0,-0.28516 0.21484,-0.5 0.5,-0.5zM10.4375,8.71875c-0.94922,0 -1.71875,0.76953 -1.71875,1.71875c0,0.94922 0.76953,1.71875 1.71875,1.71875c0.94922,0 1.71875,-0.76953 1.71875,-1.71875c0,-0.94922 -0.76953,-1.71875 -1.71875,-1.71875zM19.46875,13.28125c-1.43359,0 -2.38672,0.78516 -2.78125,1.53125h-0.0625v-1.3125h-2.8125v9.5h2.9375v-4.6875c0,-1.23828 0.24609,-2.4375 1.78125,-2.4375c1.51172,0 1.53125,1.39844 1.53125,2.5v4.625h2.9375v-5.21875c0,-2.55469 -0.54297,-4.5 -3.53125,-4.5zM9,13.5v9.5h2.96875v-9.5z"></path></g></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <img alt="image" src="public/wave-1.svg" class="profile-image1" />
+                <div class="profile-container18"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="footer-footer">
+          <div class="footer-container">
+            <div class="footer-container1">
+              <span class="footer-text">Creator</span>
+              <span>Copyright © 2024 by DhanushPrakash J.</span>
+            </div>
+            <div class="footer-container2">
+              <!-- <div class="footer-container3">
+                <span class="footer-text02 Large">Company</span>
+                <span class="footer-text03 Large">About Us</span>
+                <span class="footer-text04 Large">Careers</span>
+                <span class="footer-text05 Large">Press</span>
+              </div> -->
+              <div class="footer-container4">
+                <span class="footer-text06 Large">Pages</span>
+                <span class="footer-text07 Large"><a href="#">Home</a></span>
+                <span class="footer-text08 Large"><a href="#">Login</a></span>
+              </div>
+              <div class="footer-container5">
+                <span class="footer-text10 Large">Products</span>
+                <span class="footer-text11 Large"><a href="./index.html#Section_1">All Courses</a></span>
+                <span class="footer-text12 Large"><a href="#Section_2">Contact</a></span>
+              </div>
+            </div>
+          </div>
+          <img alt="image" src="public/waves-white.svg" class="footer-image" />
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
